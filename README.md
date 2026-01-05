@@ -23,20 +23,19 @@ UFATrack is a professional Ultimate Frisbee dataset released with synchronized *
 
 ---
 
-## Raw UFATrack Format (this repository)
+## Raw UFATrack columns (overview)
 
-The raw UFATrack file is in a **long (tidy) format**: each row corresponds to one object (a player or the disc) at a given frame.
+Each row = one object (player/disc) at one `frame`.
 
-Example columns:
-- `frame`, `id`
-- `x`, `y`
-- `vx`, `vy`, `ax`, `ay`
-- `v_mag`, `a_mag`
-- `v_angle`, `a_angle` (angle unit follows the dataset generation definition)
-- `diff_v_a_angle`, `diff_v_angle`, `diff_a_angle` (derived features)
-- `class`: `offense` / `defense` / `disc`
-- `holder`: `True` only for the disc holder row
-- `closest`, `selected`, `prev_holder`, `def_selected` (helper/analysis flags)
+- `frame`, `id`: frame number and object ID (`class=="disc"` indicates the disc row).
+- `x`, `y`: position (meters).
+- `vx`, `vy`, `ax`, `ay`: velocity/acceleration components.
+- `v_mag`, `a_mag`: speed/acceleration magnitude.
+- `v_angle`, `a_angle`: velocity/acceleration direction angle.
+- `diff_v_a_angle`, `diff_v_angle`, `diff_a_angle`: derived angle-difference features.
+- `class`: role label (`offense` / `defense` / `disc`).
+- `holder`: `True` for the disc-holding player at that frame.
+- `closest`, `selected`, `prev_holder`, `def_selected`: helper fields for analysis/preprocessing.
 
 ---
 
@@ -46,6 +45,4 @@ You can convert the raw UFATrack file into standardized **Event data** and **Tra
 
 ### Repository
 
-OpenSTARLab PreProcessing (GitHub):
-```text
-https://github.com/open-starlab/PreProcessing
+OpenSTARLab PreProcessing (GitHub): [here](https://github.com/open-starlab/PreProcessing)
