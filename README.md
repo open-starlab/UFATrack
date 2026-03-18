@@ -26,8 +26,6 @@ UFATrack is a professional Ultimate Frisbee dataset released with synchronized *
 - Disc position is obtained by annotating the **disc holder**
 - When no player is in possession, disc location is **linearly interpolated** between consecutive possession events
 
----
-
 ## Raw UFATrack columns (overview)
 
 Each row = one object (player/disc) at one `frame`.
