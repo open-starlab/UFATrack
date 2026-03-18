@@ -10,8 +10,11 @@ UFATrack is a professional Ultimate Frisbee dataset released with synchronized *
 - Effective play included: **~9.5 minutes** (excluding pulls and offense–defense transitions)
 - Possessions: **20 possession sequences**
 - Filming: **the left and right halves of the court were recorded separately**
+- Actual play videos: [video folder](https://drive.google.com/drive/folders/1sDHO5ME3haUM63yLXMDILJUGMmC4TGYm?usp=drive_link)
+- License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
-<img src="./videos/gif/annotated.gif" alt="Annotated play video" width="720">
+![annotated](https://github.com/user-attachments/assets/6ba6b243-d3da-4388-b7ce-cae35cee28bf)
+
 
 ### Sampling & Coordinates
 
@@ -40,13 +43,13 @@ Each row = one object (player/disc) at one `frame`.
 - `holder`: `True` for the disc-holding player at that frame.
 - `closest`, `selected`, `prev_holder`, `def_selected`: helper fields for analysis/preprocessing.
 
----
-
 ## Generate Event/Tracking Data via OpenSTARLab PreProcessing
 
 You can convert the raw UFATrack file into standardized **Event data** and **Tracking data** using the OpenSTARLab preprocessing pipeline. The preprocessing module merges and aligns raw inputs, normalizes coordinates, attaches context (team/period labels), and produces an analysis-ready **space-data** representation that can be used directly by downstream evaluation modules (e.g., SpaceEval).
 
-<img src="./videos/gif/tracking.gif" alt="Tracking data visualization" width="720">
+![tracking](https://github.com/user-attachments/assets/a9d8fc16-4a3e-41a3-ac1e-2f475cd589cf)
+
+---
 
 ### Repository
 
