@@ -48,8 +48,6 @@ You can convert the raw UFATrack file into standardized **Event data** and **Tra
 
 ![tracking](https://github.com/user-attachments/assets/a9d8fc16-4a3e-41a3-ac1e-2f475cd589cf)
 
----
-
 ### Repository
 
 OpenSTARLab PreProcessing (GitHub): [here](https://github.com/open-starlab/PreProcessing)
