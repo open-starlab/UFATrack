@@ -11,7 +11,6 @@ UFATrack is a professional Ultimate Frisbee dataset released with synchronized *
 - Possessions: **20 possession sequences**
 - Filming: **the left and right halves of the court were recorded separately**
 - Actual play videos: [video folder](https://drive.google.com/drive/folders/1sDHO5ME3haUM63yLXMDILJUGMmC4TGYm?usp=drive_link)
-- License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 ![annotated](https://github.com/user-attachments/assets/6ba6b243-d3da-4388-b7ce-cae35cee28bf)
 
